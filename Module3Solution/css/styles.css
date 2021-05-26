@@ -6,17 +6,8 @@ body {
 	font-family: 'Oxygen', sans-serif;
 }
 
-/** Header **/
-
-#header-nav {
-	background-color: #040404;
-	border-radius: 0;
-	border:0;
-}
-
-/* Simple Responsive Framework. */ 
 .row { 
-	width: 100%; 
+  width: 100%; 
 } 
 
 .col{
@@ -32,6 +23,61 @@ body {
 }
 
 
+/** Header **/
+
+#header-nav {
+	background-color: #737373;
+	border-radius: 0;
+	border:3px solid black;
+}
+
+.navbar-brand {
+	padding-top: 25px;
+}
+
+.navbar-brand h1 { /*Brand Name - FOOD LLC */
+	font-family: 'Lora', serif;
+	color: #000000;
+	font-size: 1.25em;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: .75;
+ }
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration:none;
+}
+
+#nav-list{
+  margin-top: 10px;
+}
+
+#nav-list a {
+  color: #000000;
+  text-align: center;
+}
+
+#nav-list a:hover {
+  background:#E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.25em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+  border:1px color: #000000;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+}
+
+/* END HEADER*/
+
+/* Simple Responsive Framework. */ 
+
 /********** Medium devices only **********/
 @media (min-width: 992px) { 
   .col-md-1 { 
@@ -40,7 +86,6 @@ body {
   .col-md-2 { 
     width: 66.7%; 
   } 
-
   .col-md-3 { 
     width: 100%; 
   } 
@@ -51,13 +96,10 @@ body {
   .col-sm-1 { 
     width:50%; 
   } 
-
   .col-sm-2 { 
     width: 100%; 
   } 
 }
-
-  
 
 /********** Extra Small devices only **********/
 @media (max-width:767px) {
@@ -65,28 +107,12 @@ body {
     width: 100%; 
   } 
  }
-
-.navbar-brand {
-	padding-top: 25px;
+/*.navbar-brand { /* Food LLC */
+  /*padding-top: 10px;
+  height: 80px;
 }
 
-.navbar-brand h1 { /*Brand Name -FOOD LLC*/
-	font-family: 'Lora', serif;
-	color: #FFFFFF;
-	font-size: 1.5em;
-	text-transform: uppercase;
-	font-weight: bold;
-	text-shadow: 1px 1px 1px #222;
-	margin-top: 0;
-	margin-bottom: 0;
-	line-height: .75;
- }
-
-.navbar-brand a:hover, .navbar-brand a:focus {
-	text-decoration:none;
-}
-
-
-
-
-
+/*.navbar-brand h1 {
+  padding-top: 10px;
+  font-size: 5vw; /* 1vw = 1% of viewport width */
+/*}
