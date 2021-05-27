@@ -18,17 +18,20 @@ body {
 
 .box{
   background: #CCCCCC;
+  /*border:2px solid black;*/
+}
+
+.box p{
   padding: 10px;
   clear:both;
 }
-
 
 /** Header **/
 
 #header-nav {
 	background-color: #737373;
 	border-radius: 0;
-	border:3px solid black;
+	border:1px solid black;
 }
 
 .navbar-brand {
@@ -57,10 +60,12 @@ body {
 #nav-list a {
   color: #000000;
   text-align: center;
+  border: 1px solid black; 
 }
 
 #nav-list a:hover {
   background:#E7E7E7;
+  margin-top: -30px;
 }
 #nav-list a span {
   font-size: 1.25em;
@@ -116,3 +121,4 @@ body {
   padding-top: 10px;
   font-size: 5vw; /* 1vw = 1% of viewport width */
 /*}
+
